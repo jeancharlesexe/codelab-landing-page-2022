@@ -1,0 +1,201 @@
+/* Settings */
+:root {
+    --bgSite: #d7d4ff;
+    --buttonColor: #6c63ff;
+  
+    --white: #ffffff;
+    --white300: #f9f9f9;
+  
+    --title: #2b2b2b;
+    --text: #555555;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+@font-face {
+    font-family: 'lato';
+    src: url('../assets/font/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'merriB';
+    src: url('../assets/font/Merriweather-Bold.ttf');
+}
+@font-face {
+    font-family: 'merriR';
+    src: url('../assets/font/Merriweather-Regular.ttf');
+}
+
+/* Header */
+/* ---- empty ----- */
+
+/* Main content */
+.home-container{
+    height: auto;
+    background-color: var(--bgSite);
+    padding-top: 40px;
+}
+.home-content{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.text-container > h1{
+    font-family: 'merriR';
+    color: #2B2B2B;
+    margin-top: 65px;
+    font-weight: 600;
+}
+.text-container > p{
+    margin-top: 16px;
+    font-size: 17px;
+    color: #555555;
+}
+.text-container > a{
+    text-decoration: none;
+}
+.text-container button{
+    margin-top: 33px ;
+    border: none;
+    background-color: var(--buttonColor);
+    height: 35px;
+    width: 100px;
+    color: white;
+    border-radius: 3px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.text-container button:hover{
+    background-color: #5852d3;
+}
+.img-container {
+    height: 300px;
+    display: flex;
+    margin-top: 30px;
+}
+.img-container > img{
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Cards */
+.card-container{
+    height: auto;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 120px 0 120px 0;
+}
+.card-content{
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.card{
+    height: auto;
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.055), -3px -3px 10px rgba(0, 0, 0, 0.055);
+}
+.card-img{
+    height: 150px;
+}
+.card-body{
+    height: auto;
+    background-color: #FFF;
+    padding: 23px;
+}
+.card-body > h3{
+    font-family: 'merriR';
+    margin-bottom: 22px;
+    color:#2B2B2B;
+}
+.card-body > p{
+    font-family: 'lato', sans-serif;
+    color: #555555;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+/* Form */
+.form-container{
+    height: auto;
+    background-color: var(--bgSite);
+    width: 100%;
+    padding-bottom: 70px;
+}
+.form-content{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+.form-content h2{
+    font-family: 'merriR';
+    font-weight: 500;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.form-content form{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.form input,textarea{
+    border: none;
+    padding: 20px 0 20px 14px;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.form input::placeholder,textarea::placeholder{
+    color: #55555594;
+}
+.form input,textarea:focus{
+    outline: none;
+}
+.form > input{
+    height: 50px;
+}
+.form > textarea{
+    font-size: 15px;
+    resize: none;
+}
+.form > button {
+    background-color: #6c63ff;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border: none;
+    height: 42px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.form > button:hover{
+    background-color: #5852d3;
+}
+
+@media (max-width: 760px){
+    .form-content{
+        width: 50%;
+    }
+}
